@@ -37,6 +37,6 @@ else:
     account_action == "4"
     print("""
     ******************************************************
-    Thank you for banking with DevYou and Have a nice day!
+    Thank You for Banking with DevYou and Have a Nice Day!
     ******************************************************
     """)
