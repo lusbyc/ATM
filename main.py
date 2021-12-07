@@ -1,17 +1,3 @@
-"""
-Enhancements to work on during break between first and second Python class:
-- Prompt user for 4 digit passcode
-    - Only allow 3 attempts 
-    - Lock out user if they enter an incorrect passcode 3 times
-    - Do not loop if the wrong passcode is entered 3 times
-
-- For withdrawals 
-    - Do not allow the user to take out an amount larger than the current balance
-    - Check that user is requesting an amount in increments of $20 as ATMs do not allow you to withdraw $5, $1, or $11 etc
-
-"""
-
-
 account_balance = 500
 account_balance_formatted = "${:,.2f}".format(account_balance)
 
