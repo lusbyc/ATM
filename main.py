@@ -38,10 +38,14 @@ while account_action != "4":
     """))
 
         else:
-            account_balance = account_balance - withdrawal_amount
-            account_balance_formatted = "${:,.2f}".format(account_balance)
-            print(f"""
-    Your new balance is {account_balance_formatted}""")
+            while withdrawal_amount % 20 != 0:
+                withdrawal_amount = int(input("""
+    Please enter an amount in increments of $20: """))
+            else:
+                account_balance = account_balance - withdrawal_amount
+                account_balance_formatted = "${:,.2f}".format(account_balance)
+                print(f"""
+    Your new balance is {account_balance_formatted}""")     
 else: 
     account_action == "4"
     print("""
